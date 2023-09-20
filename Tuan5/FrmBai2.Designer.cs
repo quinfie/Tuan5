@@ -68,6 +68,7 @@
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "Đăng ký";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txbEmail
             // 
@@ -107,6 +108,7 @@
             // 
             this.txbRePassword.Location = new System.Drawing.Point(118, 134);
             this.txbRePassword.Name = "txbRePassword";
+            this.txbRePassword.PasswordChar = '*';
             this.txbRePassword.Size = new System.Drawing.Size(175, 20);
             this.txbRePassword.TabIndex = 4;
             // 
@@ -125,7 +127,6 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(175, 20);
             this.txbUserName.TabIndex = 2;
-            this.txbUserName.TextChanged += new System.EventHandler(this.txbUserName_Leave);
             // 
             // txtUserName
             // 

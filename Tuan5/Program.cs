@@ -16,7 +16,7 @@ namespace Tuan5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBai2());
+            Application.Run(new frmBai1());
         }
     }
 }

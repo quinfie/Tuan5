@@ -51,13 +51,33 @@ namespace Tuan5
              return Regex.IsMatch(email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
         }
 
-        private void txbUserName_Leave(object sender, EventArgs e)
+        //private void txbUserName_Leave(object sender, EventArgs e)
+        //{
+        //    Control ctr = (Control)sender;
+        //    if (ctr.Text.Trim().Length == 0)
+        //        this.er.SetError(ctr, "You must enter Your Name");
+        //    else
+        //        this.er.Clear();
+        //}
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            Control ctr = (Control)sender;
-            if (ctr.Text.Trim().Length == 0)
-                this.er.SetError(ctr, "You must enter Your Name");
+            string username = txtUserName.Text;
+            string password = txtPassWord.Text;
+            string email = txtEmail.Text;
+            string repw = txtRePassWord.Text;
+            if (username == "admin" && password == "1234")
+                MessageBox.Show("Đăng ký thành công");
             else
-                this.er.Clear();
+                MessageBox.Show("Đăng ký thất bại. Vui lòng kiểm tra lại thông tin đăng ký!");
+        
+            
+            string thongTin = "Họ và tên: " + username + "\n"
+                             + "Email: " + email + "\n"
+                             + "Mật khẩu: " + password + "\n"
+                             + "Xác nhận mật khẩu: " + repw;
+
+            MessageBox.Show(thongTin, "Thông tin đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         
