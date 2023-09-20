@@ -50,10 +50,19 @@
     <Compile Include="frmBai1.Designer.cs">
       <DependentUpon>frmBai1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBai2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBai2.Designer.cs">
+      <DependentUpon>FrmBai2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBai1.resx">
       <DependentUpon>frmBai1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBai2.resx">
+      <DependentUpon>FrmBai2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

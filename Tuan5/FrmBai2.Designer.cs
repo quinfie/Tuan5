@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtLogin = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.Label();
-            this.txbUserName = new System.Windows.Forms.TextBox();
-            this.txbRePassword = new System.Windows.Forms.TextBox();
-            this.txtPassWord = new System.Windows.Forms.Label();
-            this.txbPassword = new System.Windows.Forms.TextBox();
-            this.txtRePassWord = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.txbPassword = new System.Windows.Forms.TextBox();
+            this.txtRePassWord = new System.Windows.Forms.Label();
+            this.txbRePassword = new System.Windows.Forms.TextBox();
+            this.txtPassWord = new System.Windows.Forms.Label();
+            this.txbUserName = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.Label();
+            this.txtLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,65 +60,14 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // txtLogin
+            // btnLogin
             // 
-            this.txtLogin.AutoSize = true;
-            this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtLogin.Location = new System.Drawing.Point(95, 15);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(175, 24);
-            this.txtLogin.TabIndex = 0;
-            this.txtLogin.Text = "Đăng ký tài khoản";
-            this.txtLogin.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.AutoSize = true;
-            this.txtUserName.Location = new System.Drawing.Point(10, 57);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(81, 13);
-            this.txtUserName.TabIndex = 1;
-            this.txtUserName.Text = "Tên đăng nhập";
-            // 
-            // txbUserName
-            // 
-            this.txbUserName.Location = new System.Drawing.Point(118, 54);
-            this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(175, 20);
-            this.txbUserName.TabIndex = 2;
-            // 
-            // txbRePassword
-            // 
-            this.txbRePassword.Location = new System.Drawing.Point(118, 134);
-            this.txbRePassword.Name = "txbRePassword";
-            this.txbRePassword.Size = new System.Drawing.Size(175, 20);
-            this.txbRePassword.TabIndex = 4;
-            // 
-            // txtPassWord
-            // 
-            this.txtPassWord.AutoSize = true;
-            this.txtPassWord.Location = new System.Drawing.Point(11, 111);
-            this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.Size = new System.Drawing.Size(52, 13);
-            this.txtPassWord.TabIndex = 3;
-            this.txtPassWord.Text = "Mật khẩu";
-            // 
-            // txbPassword
-            // 
-            this.txbPassword.Location = new System.Drawing.Point(118, 108);
-            this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(175, 20);
-            this.txbPassword.TabIndex = 6;
-            // 
-            // txtRePassWord
-            // 
-            this.txtRePassWord.AutoSize = true;
-            this.txtRePassWord.Location = new System.Drawing.Point(13, 137);
-            this.txtRePassWord.Name = "txtRePassWord";
-            this.txtRePassWord.Size = new System.Drawing.Size(100, 13);
-            this.txtRePassWord.TabIndex = 5;
-            this.txtRePassWord.Text = "Xác nhận mật khẩu";
+            this.btnLogin.Location = new System.Drawing.Point(118, 166);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(174, 52);
+            this.btnLogin.TabIndex = 9;
+            this.btnLogin.Text = "Đăng ký";
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // txbEmail
             // 
@@ -136,14 +85,68 @@
             this.txtEmail.TabIndex = 7;
             this.txtEmail.Text = "Địa chỉ email";
             // 
-            // btnLogin
+            // txbPassword
             // 
-            this.btnLogin.Location = new System.Drawing.Point(118, 166);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(174, 52);
-            this.btnLogin.TabIndex = 9;
-            this.btnLogin.Text = "Đăng ký";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.txbPassword.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txbPassword.Location = new System.Drawing.Point(118, 108);
+            this.txbPassword.Name = "txbPassword";
+            this.txbPassword.PasswordChar = '*';
+            this.txbPassword.Size = new System.Drawing.Size(175, 20);
+            this.txbPassword.TabIndex = 6;
+            // 
+            // txtRePassWord
+            // 
+            this.txtRePassWord.AutoSize = true;
+            this.txtRePassWord.Location = new System.Drawing.Point(13, 137);
+            this.txtRePassWord.Name = "txtRePassWord";
+            this.txtRePassWord.Size = new System.Drawing.Size(100, 13);
+            this.txtRePassWord.TabIndex = 5;
+            this.txtRePassWord.Text = "Xác nhận mật khẩu";
+            // 
+            // txbRePassword
+            // 
+            this.txbRePassword.Location = new System.Drawing.Point(118, 134);
+            this.txbRePassword.Name = "txbRePassword";
+            this.txbRePassword.Size = new System.Drawing.Size(175, 20);
+            this.txbRePassword.TabIndex = 4;
+            // 
+            // txtPassWord
+            // 
+            this.txtPassWord.AutoSize = true;
+            this.txtPassWord.Location = new System.Drawing.Point(11, 111);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.Size = new System.Drawing.Size(52, 13);
+            this.txtPassWord.TabIndex = 3;
+            this.txtPassWord.Text = "Mật khẩu";
+            // 
+            // txbUserName
+            // 
+            this.txbUserName.Location = new System.Drawing.Point(118, 54);
+            this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Size = new System.Drawing.Size(175, 20);
+            this.txbUserName.TabIndex = 2;
+            this.txbUserName.TextChanged += new System.EventHandler(this.txbUserName_Leave);
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.AutoSize = true;
+            this.txtUserName.Location = new System.Drawing.Point(10, 57);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(81, 13);
+            this.txtUserName.TabIndex = 1;
+            this.txtUserName.Text = "Tên đăng nhập";
+            // 
+            // txtLogin
+            // 
+            this.txtLogin.AutoSize = true;
+            this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogin.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtLogin.Location = new System.Drawing.Point(95, 15);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(175, 24);
+            this.txtLogin.TabIndex = 0;
+            this.txtLogin.Text = "Đăng ký tài khoản";
+            this.txtLogin.Click += new System.EventHandler(this.label1_Click);
             // 
             // FrmBai2
             // 
@@ -152,6 +155,7 @@
             this.ClientSize = new System.Drawing.Size(335, 274);
             this.Controls.Add(this.panel1);
             this.Name = "FrmBai2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBai2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmBai2_FormClosing);
             this.panel1.ResumeLayout(false);

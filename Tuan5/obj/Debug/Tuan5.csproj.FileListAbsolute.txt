@@ -7,3 +7,4 @@ E:\LuuDuLieuSinhVien\quin\Tuan5\Tuan5\obj\Debug\Tuan5.Properties.Resources.resou
 E:\LuuDuLieuSinhVien\quin\Tuan5\Tuan5\obj\Debug\Tuan5.csproj.GenerateResource.Cache
 E:\LuuDuLieuSinhVien\quin\Tuan5\Tuan5\obj\Debug\Tuan5.exe
 E:\LuuDuLieuSinhVien\quin\Tuan5\Tuan5\obj\Debug\Tuan5.pdb
+E:\LuuDuLieuSinhVien\quin\Tuan5\Tuan5\obj\Debug\Tuan5.FrmBai2.resources
